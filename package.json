@@ -41,7 +41,7 @@
       "email": "robert@broofa.com"
     }
   ],
-  "name": "node-uuid",
+  "name": "node-uuid-rcrsv",
   "optionalDependencies": {},
   "repository": {
     "type": "git",
