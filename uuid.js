@@ -51,16 +51,17 @@
   }
 
   function setupNode() {
+      throw new Error("node support disabled in this branch. TODO: need to edit package.json to use browser-specific file.")
     // Node.js crypto-based RNG - http://nodejs.org/docs/v0.6.2/api/crypto.html
     //
     // Moderately fast, high quality
-    if ('function' === typeof require) {
-      try {
-        var _rb = require('crypto').randomBytes;
-        _nodeRNG = _rng = _rb && function() {return _rb(16);};
-        _rng();
-      } catch(e) {}
-    }
+    // if ('function' === typeof require) {
+    //   try {
+    //     var _rb = require('crypto').randomBytes;
+    //     _nodeRNG = _rng = _rb && function() {return _rb(16);};
+    //     _rng();
+    //   } catch(e) {}
+    // }
   }
 
   if (_window) {
